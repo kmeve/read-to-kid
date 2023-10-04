@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read To Kid 📚</title>
+    <style>
+        body {
+            background-image: linear-gradient(white, beige);
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.3);
+            margin-bottom: 13px;
+            color: white;
+            letter-spacing: 3px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 20px;
+            color: #000000;
+            margin: 2px;
+        }
+
+
+        p {
+            line-height: 1.5;
+            font-size: 18px;
+            margin: 15px 20px 10px;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 575px;
+            margin: 0 auto;
+            border: 1px solid rgb(255, 189, 89);
+            line-height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/367/original/final1.png?1688558352");
+            background-size: 600px 910px;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            box-shadow: rgba(37, 39, 89, 0.2) 0px 8px 8px 0;
+        }
+
+        ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+
+        li {
+            font-size: 22px;
+        }
+
+        .find-a-book {
+            display: block;
+            text-decoration: none;
+            color: #000000;
+            font-size: 15px;
+        }
+
+        .find-a-book:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            padding: 20px 25px;
+            border: none;
+            border-radius: 35px;
+            transition: all 200ms ease-in-out;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        .attention {
+            color: #ffffff;
+            font-weight: normal;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .author {
+            color: black;
+            font-size: 12px;
+        }
+
+        .author:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+
+        <h1>
+            Read To Kid
+        </h1>
+        <h2>
+            For Book Lovers
+        </h2>
+
+        <p>
+            Here`s a great opportunity to share your passion with the kids. <br /> During <em>22-26.06.2023 </em>you can
+            read your favourite fairytale to our little visitors <em> at Mystetski Arsenal in Kyiv</em>.
+            <br /> <br />
+            In case you haven`t got your own book with you we can offer one of ours. <br />
+            Also you can choose the language of the book.
+            <br />
+            Here are lists of books we can offer:
+        <ul>
+            <li>
+                <a href="https://chytomo.com/najvazhlyvishi-dytiachi-knyzhky-2022-roku-na-shcho-zvernuty-uvahu/"
+                    target="_blank" class="find-a-book">
+                    👉🏻 ukrainian written books
+                </a>
+            </li>
+            <li>
+                <a href="https://www.fluentu.com/blog/english/english-children-books/" target="_blank"
+                    class="find-a-book">
+                    👉🏻 english written books
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <p>
+            <span class="attention"> <strong> Attention:</strong> </span>
+            to become the reader on our event press the button below and fill out the form.
+
+        </p>
+        <hr>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <button>
+            Inspire the kids 👦👧
+        </button>
+
+
+        <p class="footer">
+            This page was built by
+            <a href="https://www.facebook.com/profile.php?id=100007092079099" target="_blank">
+                <span class="author"> Kateryna Mazhara </span>
+            </a>
+        </p>
+    </div>
+
+    <script>
+        function info() {
+            let name = prompt("What`s your name?");
+            let email = prompt("What`s your email?");
+            let day = prompt("What day would you like to read the book?");
+            let time = prompt("What time do you prefer to read the book?");
+            let book = prompt("Do you need a book from the lists? Answer 'yes','no'");
+
+            book = book.toLowerCase().trim();
+
+            if (book === "yes") {
+                let bookName = prompt("What`s the name of the book you chose?");
+
+            } else {
+                let noNeed = prompt("What`s the name of the book your book you want to read?");
+            }
+
+
+            alert("Thank you " + name + "! You successfully submitted the application. "
+                + "You want to read at " + time + " on " + day + ". We will be in touch.");
+
+        }
+
+
+        let button = document.querySelector("button");
+        button.addEventListener("click", info)
+
+    </script>
+
+</body>
+
+</html>
